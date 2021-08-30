@@ -1,0 +1,7 @@
+# Title. Short, imperative mood, all lower case, no period. 80 chars max line.
+# e.g. "go/cmd/main: modifies default port constant"
+
+################################# 80 chars #####################################
+
+# Body. Add line between title and body. Give additional context to commit if
+# needed. Explain what/why rather than how.
