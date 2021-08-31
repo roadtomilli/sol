@@ -11,3 +11,8 @@ Monorepo that houses cloud applications directly correlated to project.
 - Protobufs
 - Docker
 - Terraform
+
+# Setup
+```
+bash scripts/setup.sh
+```
