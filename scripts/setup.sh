@@ -11,7 +11,7 @@ else
 fi
 
 # Check if high enough Go version exists, install it if not.
-which_go=$(which -s go)]
+which_go=$(which -s go)
 if [[ $which_go != 0 ]] ; then
     current_go_version=`go version | { read _ _ v _; echo ${v#go}; }`
     required_go_version="1.17"
