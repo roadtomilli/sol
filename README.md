@@ -19,6 +19,10 @@ Monorepo that houses cloud applications directly correlated to project.
 4. Create IAM user. Change password, setup MFA.
 
 # Setup
+Follow instructions to install Docker app.
+  - Mac OSX: https://docs.docker.com/desktop/mac/install/
+  - Linux: https://docs.docker.com/engine/install/
+
 ```
 $ bash scripts/setup.sh
 ```
