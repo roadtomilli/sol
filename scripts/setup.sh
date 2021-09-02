@@ -30,16 +30,16 @@ fi
 which_protoc=$(which -s protoc)
 if [[ $which_protoc != 0 ]] ; then
     current_protoc_version=`protoc --version | { read _ v; echo $v; }`
-    required_protoc_version="3.17.3"
+    required_protoc_version="3.17"
     if [ "$(printf '%s\n' "$required_protoc_version" "$current_protoc_version" | sort -V | head -n1)" = "$required_protoc_version" ]; then 
         echo "Protobuf already installed, skipping..."
     else
-        brew install protobuf@3.17.3
+        brew install protobuf@3.17
         echo "Correct Protobuf version not installed, installing..."
     fi
 else
     echo "Protobuf not installed, installing..."
-    brew install protobuf@3.17.3
+    brew install protobuf@3.17
 fi
 
 # Install GRPC plugins
